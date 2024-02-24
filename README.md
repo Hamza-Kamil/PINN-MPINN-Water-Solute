@@ -20,7 +20,6 @@ This repository contains the code implementations used for the research paper ti
 
 (b) The PINNs solvers are implemented using the TensorFlow library.
 
-(c) Data related to test case A can be found in [insert_path_here].
 
 ## Getting Started
 
