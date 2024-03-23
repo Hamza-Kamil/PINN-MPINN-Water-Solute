@@ -23,10 +23,10 @@ class MPINN:
         self.LAA = LAA
 
         # data
-        [self.t_res, self.z_res] = [self.get_collocations(soil, self.n_res)[0],self.get_collocations(soil, self.n_res)[1]]
-        [self.t_ic, self.z_ic] = [self.get_collocations(list(np.append(soil[0:3],0)), self.nz_ic)[0],self.get_collocations(list(np.append(soil[0:3],0)), self.nz_ic)[1]]
-        [self.t_ub, self.z_ub] = [self.get_collocations([soil[0],soil[0],soil[2],soil[3]], self.nz_ub)[0],self.get_collocations([soil[0],soil[0],soil[2],soil[3]], self.nz_ub)[1]]
-        [self.t_lb, self.z_lb] = [self.get_collocations([soil[1],soil[1],soil[2],soil[3]], self.nz_lb)[0],self.get_collocations([soil[1],soil[1],soil[2],soil[3]], self.nz_lb)[1]]
+        self.t_res, self.z_res = self.get_collocations(soil, self.n_res)
+        self.t_ic, self.z_ic = self.get_collocations(list(np.append(soil[0:3],0)), self.nz_ic)
+        self.t_ub, self.z_ub = self.get_collocations([soil[0],soil[0],soil[2],soil[3]], self.nz_ub)
+        self.t_lb, self.z_lb = self.get_collocations([soil[1],soil[1],soil[2],soil[3]], self.nz_lb)
 
         # the structure of the two neural networks
 
