@@ -1,6 +1,6 @@
-# Improved PINNs and MPINNs Solvers
+# PINN and MPINN solvers for modeling water flow and nitrogen transport in unsaturated soils
 
-This repository contains the code implementations used for the research paper titled "Improved PINNs and MPINNs solvers for modeling water flow and nitrogen transport in unsaturated soils."
+This repository contains the code implementations used for the research paper titled "PINN and MPINN solvers for modeling water flow and nitrogen transport in unsaturated soils."
 
 ## Authors
 
