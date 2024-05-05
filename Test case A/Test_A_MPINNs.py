@@ -8,7 +8,7 @@ import os
 import random
 import math
 
-# MPINNs class
+# MPINN class
 class MPINNs:
 
     def __init__(self, soil, size, layers_psi, layers_c, LAA):
