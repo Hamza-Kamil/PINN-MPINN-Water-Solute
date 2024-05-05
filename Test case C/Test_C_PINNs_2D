@@ -1,3 +1,5 @@
+# ! pip install deepxde
+
 import tensorflow_probability as tfp
 import matplotlib.tri as tri
 import deepxde as dde
