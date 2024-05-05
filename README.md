@@ -1,6 +1,6 @@
-# PINN and MPINN solvers for modeling water flow and nitrogen transport in unsaturated soils
+# Modeling water and nitrogen dynamics in unsaturated soils using physics and multi-physics informed neural networks
 
-This repository contains the code implementations used for the research paper titled "PINN and MPINN solvers for modeling water flow and nitrogen transport in unsaturated soils."
+This repository contains the code implementations used for the research paper titled "Modeling water and nitrogen dynamics in unsaturated soils using physics and multi-physics informed neural networks."
 
 ## Authors
 
