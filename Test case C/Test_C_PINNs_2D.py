@@ -205,11 +205,6 @@ class PINN:
 
     def net_res(self, t, x, z): 
         X = tf.concat([t, x, z],1)
-        if self.normalize:
-            X0 = np.concatenate(t,z, 1)
-            self.X_mean = X0.mean(0, keepdims=True)
-            self.X_std = X0.std(0, keepdims=True)
-            X = (X - self.X_mean)/self.X_std
             
         psi, c = self.net_coupled(X, self.weights, self.biases, self.A)
 
@@ -381,15 +376,7 @@ def main(soil, size , num_layers, num_neurons, number_random, it):
 
     layers = np.concatenate([[3], num_neurons*np.ones(num_layers), [2]]).astype(int).tolist()
 
-
-    # random seeds
-    tf.compat.v1.reset_default_graph()
-    tf.compat.v1.set_random_seed(number_random)
-    random.seed(number_random)
-    np.random.seed(number_random)
-
-
-    model = PINN(soil, size, layers, LAA=True, monotonic=False, normalize = False) 
+    model = PINN(soil, size, layers, LAA=True) 
     #train
     model.train(it)
 
