@@ -39,7 +39,9 @@ Contributions and improvements are welcome. Feel free to submit pull requests or
 
 For inquiries, please reach out to:
 
-- **Hamza Kamil** (hamza.kamil@um6p.ma, hamza.kamil.1@ens.etsmtl.ca)
+* **Hamza Kamil**
+  [hkamil@bcamath.org](mailto:hkamil@bcamath.org)
+  [hamza.kamil.1@ens.etsmtl.ca](mailto:hamza.kamil.1@ens.etsmtl.ca)
 
 ## Citation
 
